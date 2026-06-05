@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: askSize muss exakt 0 sein, ist hier 12 -->
+<transaction time="2026-04-21T14:55:33.640Z">
+    <stock seq="3875">
+        <stockData>
+            <symbol>HOOJ</symbol>
+            <sector>mediaentertainment</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">1320.00</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">1260.00</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>51</bidSize>
+                <askSize>12</askSize>
+                <lastSaleSize>44</lastSaleSize>
+            </sizeInfo>
+            <volume>92100</volume>
+            <marketPercent>0.0442</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

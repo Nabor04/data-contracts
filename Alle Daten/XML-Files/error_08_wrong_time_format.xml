@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: time-Attribut fehlen die Millisekunden (.745Z), Format ungültig -->
+<transaction time="2026-04-22T03:41:09Z">
+    <stock seq="2801">
+        <stockData>
+            <symbol>HOOJ</symbol>
+            <sector>mediaentertainment</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">1305.00</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">1245.00</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>38</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>47</lastSaleSize>
+            </sizeInfo>
+            <volume>89300</volume>
+            <marketPercent>0.0442</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

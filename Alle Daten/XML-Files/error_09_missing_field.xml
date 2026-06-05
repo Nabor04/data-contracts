@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: Pflichtfeld <symbol> fehlt komplett -->
+<transaction time="2026-04-23T06:28:11.430Z">
+    <stock seq="4987">
+        <stockData>
+            <sector>softwareservices</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">375.00</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">310.00</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>64</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>53</lastSaleSize>
+            </sizeInfo>
+            <volume>976800</volume>
+            <marketPercent>0.02508</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: volume muss >= 0 sein, ist hier -5000 -->
+<transaction time="2026-04-23T09:10:44.550Z">
+    <stock seq="7123">
+        <stockData>
+            <symbol>BMZM</symbol>
+            <sector>retailing</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">2290.00</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">2230.00</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>19</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>24</lastSaleSize>
+            </sizeInfo>
+            <volume>-5000</volume>
+            <marketPercent>0.01773</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

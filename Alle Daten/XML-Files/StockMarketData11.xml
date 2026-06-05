@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-04-22T00:42:12.746Z">
+    <stock seq="1713">
+        <stockData>
+            <symbol>NSFT</symbol>
+            <sector>softwareservices</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">350.63</bidPrice>
+                <askPrice currency="EUR">0</askPrice>
+                <lastSalePrice currency="EUR">350.63 </lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>20</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>19</lastSaleSize>
+            </sizeInfo>
+            <volume>978543</volume>
+            <marketPercent>0.02508</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

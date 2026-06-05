@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: NSFT muss marketPercent=0.02508 haben, nicht 0.0900 -->
+<transaction time="2026-04-22T17:42:18.190Z">
+    <stock seq="6044">
+        <stockData>
+            <symbol>NSFT</symbol>
+            <sector>softwareservices</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">365.00</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">305.00</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>70</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>58</lastSaleSize>
+            </sizeInfo>
+            <volume>981200</volume>
+            <marketPercent>0.0900</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

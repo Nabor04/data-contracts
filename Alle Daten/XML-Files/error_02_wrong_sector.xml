@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: HOOJ muss sector=mediaentertainment haben, nicht technology -->
+<transaction time="2026-04-22T03:41:09.745Z">
+    <stock seq="3100">
+        <stockData>
+            <symbol>HOOJ</symbol>
+            <sector>technology</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">1295.50</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">1240.50</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>33</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>41</lastSaleSize>
+            </sizeInfo>
+            <volume>87450</volume>
+            <marketPercent>0.0442</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

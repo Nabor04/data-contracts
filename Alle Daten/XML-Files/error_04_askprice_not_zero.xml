@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: askPrice muss exakt 0.0 sein, ist hier 175.50 -->
+<transaction time="2026-04-23T11:30:05.820Z">
+    <stock seq="5231">
+        <stockData>
+            <symbol>BMZM</symbol>
+            <sector>retailing</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">2266.84</bidPrice>
+                <askPrice currency="EUR">175.50</askPrice>
+                <lastSalePrice currency="EUR">2226.84</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>28</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>35</lastSaleSize>
+            </sizeInfo>
+            <volume>201500</volume>
+            <marketPercent>0.01773</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

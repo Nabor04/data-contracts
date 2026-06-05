@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: stock/@seq muss >= 1 sein, ist hier 0 -->
+<transaction time="2026-04-21T20:05:57.880Z">
+    <stock seq="0">
+        <stockData>
+            <symbol>BMZM</symbol>
+            <sector>retailing</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">2280.00</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">2210.00</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>42</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>31</lastSaleSize>
+            </sizeInfo>
+            <volume>198700</volume>
+            <marketPercent>0.01773</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

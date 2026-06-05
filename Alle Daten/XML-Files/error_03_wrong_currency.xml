@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- FEHLER: bidPrice hat currency="USD" statt "EUR" -->
+<transaction time="2026-04-23T08:15:22.310Z">
+    <stock seq="4512">
+        <stockData>
+            <symbol>NSFT</symbol>
+            <sector>softwareservices</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="USD">380.63</bidPrice>
+                <askPrice currency="EUR">0.00</askPrice>
+                <lastSalePrice currency="EUR">300.63</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>55</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>62</lastSaleSize>
+            </sizeInfo>
+            <volume>978500</volume>
+            <marketPercent>0.02508</marketPercent>
+        </stockData>
+    </stock>
+</transaction>
