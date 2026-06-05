@@ -1,0 +1,79 @@
+dataContract:
+  id: wine-quality-v1
+  name: WineQuality Contract
+  rowCount:
+    minimum: 25
+    maximum: 5000
+  uniqueFields:
+    - id
+  schema:
+    - field: id
+      type: integer
+      minimum: 0
+      maximum: 10000
+
+    - field: fixed_acidity
+      type: float
+      minimum: 5.0
+      maximum: 12.0
+
+    - field: volatile_acidity
+      type: float
+      minimum: 0.1
+      maximum: 1.5
+
+    - field: citric_acid
+      type: float
+      minimum: 0.0
+      maximum: 1.0
+
+    - field: residual_sugar
+      type: float
+      minimum: 1.0
+      maximum: 10.0
+
+    - field: chlorides
+      type: float
+      minimum: 0.01
+      maximum: 0.5
+
+    - field: free_sulfur_dioxide
+      type: integer
+      minimum: 1
+      maximum: 100
+
+    - field: total_sulfur_dioxide
+      type: integer
+      minimum: 1
+      maximum: 300
+
+    - field: density
+      type: float
+      minimum: 0.990
+      maximum: 1.005
+
+    - field: pH
+      type: float
+      minimum: 2.8
+      maximum: 4.0
+
+    - field: sulphates
+      type: float
+      minimum: 0.3
+      maximum: 2.0
+
+    - field: alcohol
+      type: float
+      minimum: 8.0
+      maximum: 15.0
+
+    - field: quality
+      type: integer
+      minimum: 3
+      maximum: 9
+      allowed_values: [3, 4, 5, 6, 7, 8, 9]
+
+  crossFieldRules:
+    - rule: total_so2_gte_free_so2
+      description: total_sulfur_dioxide muss groesser oder gleich free_sulfur_dioxide sein,
+                   da freies SO2 chemisch immer ein Teilbestand des Gesamt-SO2 ist

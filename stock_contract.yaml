@@ -1,0 +1,80 @@
+dataContract:
+  id: stockmarket-xml-v1
+  name: StockMarket XML Contract
+  schema:
+    - field: symbol
+      xpath: .//symbol
+      type: string
+      allowed_values: [HOOJ, NSFT, BMZM]
+
+    - field: sector
+      xpath: .//sector
+      type: string
+      allowed_values: [mediaentertainment, technology, finance, softwareservices, retailing]
+
+    - field: securityType
+      xpath: .//securityType
+      type: string
+      allowed_values: [commonstock, etf, bond]
+
+    - field: bidPrice
+      xpath: .//bidPrice
+      type: float
+      minimum: 0.0
+      maximum: 100000.0
+      attribute_currency: EUR
+
+    - field: askPrice
+      xpath: .//askPrice
+      type: float
+      exact_value: 0.0
+      attribute_currency: EUR
+
+    - field: lastSalePrice
+      xpath: .//lastSalePrice
+      type: float
+      minimum: 0.0
+      maximum: 100000.0
+      attribute_currency: EUR
+
+    - field: bidSize
+      xpath: .//bidSize
+      type: integer
+      minimum: 0
+      maximum: 100000
+
+    - field: askSize
+      xpath: .//askSize
+      type: integer
+      exact_value: 0
+
+    - field: lastSaleSize
+      xpath: .//lastSaleSize
+      type: integer
+      minimum: 0
+      maximum: 100000
+
+    - field: volume
+      xpath: .//volume
+      type: integer
+      minimum: 0
+      maximum: 100000000
+
+    - field: marketPercent
+      xpath: .//marketPercent
+      type: float
+      minimum: 0.0
+      maximum: 1.0
+
+  crossFieldRules:
+    - rule: symbol_marketPercent_consistency
+      symbolExpected:
+        HOOJ: 0.0442
+        NSFT: 0.02508
+        BMZM: 0.01773
+
+    - rule: symbol_sector_consistency
+      sectorExpected:
+        HOOJ: mediaentertainment
+        NSFT: softwareservices
+        BMZM: retailing
