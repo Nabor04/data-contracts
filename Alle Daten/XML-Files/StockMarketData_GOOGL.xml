@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-18T11:15:22.344Z">
+    <stock seq="7001">
+        <stockData>
+            <symbol>GOOGL</symbol>
+            <sector>technology</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">173.82</bidPrice>
+                <askPrice currency="EUR">173.95</askPrice>
+                <lastSalePrice currency="EUR">173.89</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>280</bidSize>
+                <askSize>310</askSize>
+                <lastSaleSize>70</lastSaleSize>
+            </sizeInfo>
+            <volume>28456300</volume>
+            <marketPercent>0.03876</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

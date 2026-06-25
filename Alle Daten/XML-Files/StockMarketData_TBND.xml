@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-18T11:18:49.217Z">
+    <stock seq="7006">
+        <stockData>
+            <symbol>TBND</symbol>
+            <sector>finance</sector>
+            <securityType>bond</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">98.62</bidPrice>
+                <askPrice currency="EUR">98.75</askPrice>
+                <lastSalePrice currency="EUR">98.68</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>50</bidSize>
+                <askSize>40</askSize>
+                <lastSaleSize>10</lastSaleSize>
+            </sizeInfo>
+            <volume>48200</volume>
+            <marketPercent>0.00312</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-18T11:17:09.058Z">
+    <stock seq="7003">
+        <stockData>
+            <symbol>PFE</symbol>
+            <sector>healthcare</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">27.84</bidPrice>
+                <askPrice currency="EUR">27.91</askPrice>
+                <lastSalePrice currency="EUR">27.88</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>1540</bidSize>
+                <askSize>1180</askSize>
+                <lastSaleSize>620</lastSaleSize>
+            </sizeInfo>
+            <volume>15234700</volume>
+            <marketPercent>0.01234</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

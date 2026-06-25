@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-18T11:17:31.903Z">
+    <stock seq="7004">
+        <stockData>
+            <symbol>SPLY</symbol>
+            <sector>finance</sector>
+            <securityType>etf</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">518.24</bidPrice>
+                <askPrice currency="EUR">518.31</askPrice>
+                <lastSalePrice currency="EUR">518.28</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>4200</bidSize>
+                <askSize>3870</askSize>
+                <lastSaleSize>1950</lastSaleSize>
+            </sizeInfo>
+            <volume>125843200</volume>
+            <marketPercent>0.09234</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

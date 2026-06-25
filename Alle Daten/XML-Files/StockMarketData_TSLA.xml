@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-18T11:16:44.721Z">
+    <stock seq="7002">
+        <stockData>
+            <symbol>TSLA</symbol>
+            <sector>technology</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="USD">242.15</bidPrice>
+                <askPrice currency="USD">242.38</askPrice>
+                <lastSalePrice currency="USD">242.27</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>680</bidSize>
+                <askSize>590</askSize>
+                <lastSaleSize>230</lastSaleSize>
+            </sizeInfo>
+            <volume>62341500</volume>
+            <marketPercent>0.06215</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

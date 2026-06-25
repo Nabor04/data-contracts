@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-18T11:18:02.476Z">
+    <stock seq="7005">
+        <stockData>
+            <symbol>META</symbol>
+            <sector>socialmedia</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">521.40</bidPrice>
+                <askPrice currency="EUR">521.67</askPrice>
+                <lastSalePrice currency="EUR">521.53</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>195</bidSize>
+                <askSize>220</askSize>
+                <lastSaleSize>85</lastSaleSize>
+            </sizeInfo>
+            <volume>11782400</volume>
+            <marketPercent>0.02841</marketPercent>
+        </stockData>
+    </stock>
+</transaction>
