@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="19.06.2026 10:05:33">
+    <stock seq="7010">
+        <stockData>
+            <symbol>XYZW1</symbol>
+            <sector>technology</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">88.10</bidPrice>
+                <askPrice currency="EUR">88.22</askPrice>
+                <lastSalePrice currency="EUR">88.16</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>410</bidSize>
+                <askSize>370</askSize>
+                <lastSaleSize>150</lastSaleSize>
+            </sizeInfo>
+            <volume>5643200</volume>
+            <marketPercent>0.02134</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

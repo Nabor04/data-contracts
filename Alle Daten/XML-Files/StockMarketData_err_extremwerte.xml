@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-19T11:45:20.039Z">
+    <stock seq="7013">
+        <stockData>
+            <symbol>AMZN</symbol>
+            <sector>retailing</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">187250.00</bidPrice>
+                <askPrice currency="EUR">187310.00</askPrice>
+                <lastSalePrice currency="EUR">187280.00</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>3</bidSize>
+                <askSize>2</askSize>
+                <lastSaleSize>1</lastSaleSize>
+            </sizeInfo>
+            <volume>200000000</volume>
+            <marketPercent>3.14</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

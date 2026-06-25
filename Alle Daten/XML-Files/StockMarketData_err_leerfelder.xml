@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-19T10:31:47.882Z">
+    <stock seq="7011">
+        <stockData>
+            <symbol>HOOJ</symbol>
+            <sector></sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR"></bidPrice>
+                <askPrice currency="EUR">49.12</askPrice>
+                <lastSalePrice currency="EUR">49.05</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>560</bidSize>
+                <askSize></askSize>
+                <lastSaleSize>190</lastSaleSize>
+            </sizeInfo>
+            <volume>1893600</volume>
+            <marketPercent>0.04420</marketPercent>
+        </stockData>
+    </stock>
+</transaction>
