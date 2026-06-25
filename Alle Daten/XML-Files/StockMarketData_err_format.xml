@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="23.04.2026 00:58">
+    <stock seq="ABC">
+        <stockData>
+            <symbol>fmt 99</symbol>
+            <sector>Einzelhandel</sector>
+            <securityType>aktie</securityType>
+            <priceInfo>
+                <bidPrice currency="Euro">2266.84</bidPrice>
+                <askPrice currency="EURO">2270.10</askPrice>
+                <lastSalePrice currency="€">2268.00 </lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>2</bidSize>
+                <askSize>1</askSize>
+                <lastSaleSize>3</lastSaleSize>
+            </sizeInfo>
+            <volume>205644</volume>
+            <marketPercent>0.01773</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

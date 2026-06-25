@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-05-12T10:45:51.770Z">
+    <stock seq="3003">
+        <stockData>
+            <symbol>TYPX</symbol>
+            <sector>financials</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">N/A</bidPrice>
+                <askPrice currency="EUR">zwei</askPrice>
+                <lastSalePrice currency="EUR">12,75</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>fünf</bidSize>
+                <askSize>3.5</askSize>
+                <lastSaleSize>10</lastSaleSize>
+            </sizeInfo>
+            <volume>98abc</volume>
+            <marketPercent>hoch</marketPercent>
+        </stockData>
+    </stock>
+</transaction>
