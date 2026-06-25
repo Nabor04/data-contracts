@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-05-12T11:30:00.000Z">
+    <stock seq="3004">
+        <stockData>
+            <symbol>RNGE</symbol>
+            <sector>energy</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">-45.30</bidPrice>
+                <askPrice currency="EUR">-44.90</askPrice>
+                <lastSalePrice currency="EUR">0</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>-12</bidSize>
+                <askSize>8</askSize>
+                <lastSaleSize>0</lastSaleSize>
+            </sizeInfo>
+            <volume>-500000</volume>
+            <marketPercent>1.85</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

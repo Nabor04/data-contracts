@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-05-12T09:14:22.118Z">
+    <stock seq="3001">
+        <stockData>
+            <symbol>ALPH</symbol>
+            <sector>technology</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">154.20</bidPrice>
+                <askPrice currency="EUR">154.85</askPrice>
+                <lastSalePrice currency="EUR">154.50</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>120</bidSize>
+                <askSize>95</askSize>
+                <lastSaleSize>40</lastSaleSize>
+            </sizeInfo>
+            <volume>842310</volume>
+            <marketPercent>0.02451</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

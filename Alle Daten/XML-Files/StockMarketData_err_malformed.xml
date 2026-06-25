@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-05-12T12:00:00.000Z">
+    <stock seq="3006">
+        <stockData>
+            <symbol>MALF</symbol>
+            <sector>healthcare</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">61.20</bidPrice>
+                <askPrice currency="EUR">61.55</askPrice>
+                <lastSalePrice currency="EUR">61.40</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>30</bidSize>
+                <askSize>20</askSize>
+                <lastSaleSize>15</lastSaleSize>
+            </sizeInfo>
+            <volume>301200</volume>
+            <marketPercent>0.0156</marketPercent>
+        </stockData>
+    </stock>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-05-12T10:02:09.330Z">
+    <stock seq="3002">
+        <stockData>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">88.10</bidPrice>
+                <askPrice currency="EUR">88.40</askPrice>
+                <lastSalePrice currency="EUR">88.25</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>50</bidSize>
+                <askSize>60</askSize>
+                <lastSaleSize>25</lastSaleSize>
+            </sizeInfo>
+            <volume>123450</volume>
+            <marketPercent>0.00982</marketPercent>
+        </stockData>
+    </stock>
+</transaction>
