@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-12T09:32:38.504Z">
+    <stock seq="6006">
+        <stockData>
+            <symbol>JPM</symbol>
+            <sector>finance</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">197.84</bidPrice>
+                <askPrice currency="EUR">198.02</askPrice>
+                <lastSalePrice currency="EUR">197.93</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>450</bidSize>
+                <askSize>380</askSize>
+                <lastSaleSize>190</lastSaleSize>
+            </sizeInfo>
+            <volume>8234500</volume>
+            <marketPercent>0.01834</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

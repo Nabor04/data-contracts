@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-12T09:31:14.427Z">
+    <stock seq="6001">
+        <stockData>
+            <symbol>AAPL</symbol>
+            <sector>technology</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">174.38</bidPrice>
+                <askPrice currency="EUR">174.51</askPrice>
+                <lastSalePrice currency="EUR">174.44</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>320</bidSize>
+                <askSize>275</askSize>
+                <lastSaleSize>80</lastSaleSize>
+            </sizeInfo>
+            <volume>52483100</volume>
+            <marketPercent>0.04123</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

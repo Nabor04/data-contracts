@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-12T09:31:47.219Z">
+    <stock seq="6003">
+        <stockData>
+            <symbol>NVDA</symbol>
+            <sector>technology</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">862.40</bidPrice>
+                <askPrice currency="EUR">862.75</askPrice>
+                <lastSalePrice currency="EUR">862.55</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>140</bidSize>
+                <askSize>165</askSize>
+                <lastSaleSize>35</lastSaleSize>
+            </sizeInfo>
+            <volume>38712400</volume>
+            <marketPercent>0.05187</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

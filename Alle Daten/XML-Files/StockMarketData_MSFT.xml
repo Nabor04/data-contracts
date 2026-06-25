@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-06-12T09:31:28.853Z">
+    <stock seq="6002">
+        <stockData>
+            <symbol>MSFT</symbol>
+            <sector>softwareservices</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">418.72</bidPrice>
+                <askPrice currency="EUR">418.89</askPrice>
+                <lastSalePrice currency="EUR">418.80</lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>185</bidSize>
+                <askSize>210</askSize>
+                <lastSaleSize>55</lastSaleSize>
+            </sizeInfo>
+            <volume>21345600</volume>
+            <marketPercent>0.03241</marketPercent>
+        </stockData>
+    </stock>
+</transaction>
