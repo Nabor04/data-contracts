@@ -1,0 +1,113 @@
+# =============================================================================
+# Data Contract: StockMarket (XML)
+# =============================================================================
+# Dieser Contract beschreibt, wie ein gueltiger Boersen-Datensatz aussehen muss.
+# Jede XML-Datei enthaelt genau eine Transaktion mit einem Stock-Eintrag.
+#
+# Aufbau:
+#   - schema          -> Regeln pro Feld (Typ, Wertebereich, erlaubte Werte)
+#   - crossFieldRules -> Regeln, die mehrere Felder gemeinsam betreffen
+#
+# Die "xpath"-Angabe sagt dem Validator, wo das Feld im XML-Baum steht.
+# =============================================================================
+
+dataContract:
+  id: stockmarket-xml-v1
+  name: StockMarket XML Contract
+
+  schema:
+    # --- Wertpapier-Stammdaten -------------------------------------------------
+
+    # Boersenkuerzel (Ticker), z. B. AAPL oder BRK.A
+    # Erlaubt: 1-5 Grossbuchstaben, optional eine Anteilsklasse wie ".A" / ".B"
+    - field: symbol
+      xpath: .//symbol
+      type: string
+      pattern: "^[A-Z]{1,5}(\\.[A-Z])?$"
+
+    # Branche/Sektor des Unternehmens - freier Text, keine feste Liste,
+    # damit wir nicht jede neue Branche im Contract pflegen muessen.
+    - field: sector
+      xpath: .//sector
+      type: string
+
+    # Art des Wertpapiers: Stammaktie, ETF oder Anleihe
+    - field: securityType
+      xpath: .//securityType
+      type: string
+      allowed_values: [commonstock, etf, bond]
+
+    # --- Preisinformationen (alle in EUR) --------------------------------------
+
+    # Geldkurs - hoechster Preis, den ein Kaeufer aktuell zu zahlen bereit ist
+    - field: bidPrice
+      xpath: .//bidPrice
+      type: float
+      minimum: 0.0
+      maximum: 100000.0
+      attribute_currency: EUR
+
+    # Briefkurs - niedrigster Preis, zu dem ein Verkaeufer verkaufen wuerde
+    - field: askPrice
+      xpath: .//askPrice
+      type: float
+      minimum: 0.0
+      maximum: 100000.0
+      attribute_currency: EUR
+
+    # Letzter tatsaechlich gehandelter Kurs
+    - field: lastSalePrice
+      xpath: .//lastSalePrice
+      type: float
+      minimum: 0.0
+      maximum: 100000.0
+      attribute_currency: EUR
+
+    # --- Ordergroessen (Stueckzahlen) ------------------------------------------
+
+    # Stueckzahl auf der Geld-Seite
+    - field: bidSize
+      xpath: .//bidSize
+      type: integer
+      minimum: 0
+      maximum: 100000
+
+    # Stueckzahl auf der Brief-Seite
+    - field: askSize
+      xpath: .//askSize
+      type: integer
+      minimum: 0
+      maximum: 100000
+
+    # Stueckzahl des letzten Abschlusses
+    - field: lastSaleSize
+      xpath: .//lastSaleSize
+      type: integer
+      minimum: 0
+      maximum: 100000
+
+    # --- Handelskennzahlen -----------------------------------------------------
+
+    # Gesamtes Handelsvolumen des Tages (Anzahl gehandelter Stuecke)
+    # Keine Obergrenze - das Volumen kann je nach Aktie sehr stark schwanken.
+    - field: volume
+      xpath: .//volume
+      type: integer
+      minimum: 0
+
+    # Marktanteil als Dezimalzahl zwischen 0 und 1 (entspricht 0 % bis 100 %)
+    - field: marketPercent
+      xpath: .//marketPercent
+      type: float
+      minimum: 0.0
+      maximum: 1.0
+
+  # --- Feldübergreifende Regeln ------------------------------------------------
+  crossFieldRules:
+    # Ein Symbol gehoert fest zu einem Sektor - das aendert sich nicht.
+    # Hier pruefen wir, dass die bekannten Symbole im richtigen Sektor liegen.
+    - rule: symbol_sector_consistency
+      sectorExpected:
+        HOOJ: mediaentertainment
+        NSFT: softwareservices
+        BMZM: retailing

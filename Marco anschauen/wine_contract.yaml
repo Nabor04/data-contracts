@@ -1,0 +1,114 @@
+# =============================================================================
+# Data Contract: WineQuality (CSV)
+# =============================================================================
+# Dieser Contract legt fest, wie eine gueltige WineQuality-CSV aussehen muss.
+# Geprueft wird mit Great Expectations: Spaltenstruktur, Typen, Wertebereiche
+# und ein paar fachliche Regeln.
+#
+# Aufbau:
+#   - rowCount        -> wie viele Zeilen die Datei haben darf
+#   - uniqueFields    -> Spalten, deren Werte eindeutig sein muessen
+#   - schema          -> Regeln pro Spalte (Typ, Min/Max, erlaubte Werte)
+#   - crossFieldRules -> Regeln ueber mehrere Spalten hinweg
+# =============================================================================
+
+dataContract:
+  id: wine-quality-v1
+  name: WineQuality Contract
+
+  # Obergrenze fuer die Zeilenanzahl. Eine Mindestanzahl gibt es bewusst nicht,
+  # damit auch kleine Teil-Datensaetze verarbeitet werden koennen.
+  rowCount:
+    maximum: 5000
+
+  # Die id muss eindeutig sein - keine doppelten Datensaetze.
+  uniqueFields:
+    - id
+
+  schema:
+    # Fortlaufende ID des Datensatzes
+    - field: id
+      type: integer
+      minimum: 0
+      maximum: 10000
+
+    # Nicht-fluechtige Saeure (Weinsaeure) in g/dm3
+    - field: fixed_acidity
+      type: float
+      minimum: 5.0
+      maximum: 12.0
+
+    # Fluechtige Saeure (Essigsaeure) - zu viel davon verdirbt den Wein
+    - field: volatile_acidity
+      type: float
+      minimum: 0.1
+      maximum: 1.5
+
+    # Zitronensaeure - sorgt fuer Frische
+    - field: citric_acid
+      type: float
+      minimum: 0.0
+      maximum: 1.0
+
+    # Restzucker nach der Gaerung in g/dm3
+    - field: residual_sugar
+      type: float
+      minimum: 1.0
+      maximum: 10.0
+
+    # Chloride (Salzgehalt)
+    - field: chlorides
+      type: float
+      minimum: 0.01
+      maximum: 0.5
+
+    # Freies Schwefeldioxid - schuetzt vor Oxidation
+    - field: free_sulfur_dioxide
+      type: integer
+      minimum: 1
+      maximum: 100
+
+    # Gesamtes Schwefeldioxid (frei + gebunden)
+    - field: total_sulfur_dioxide
+      type: integer
+      minimum: 1
+      maximum: 300
+
+    # Dichte des Weins - haengt mit Zucker- und Alkoholgehalt zusammen
+    - field: density
+      type: float
+      minimum: 0.990
+      maximum: 1.005
+
+    # Saeuregrad (pH-Wert)
+    - field: pH
+      type: float
+      minimum: 2.8
+      maximum: 4.0
+
+    # Sulfate - wirken konservierend
+    - field: sulphates
+      type: float
+      minimum: 0.3
+      maximum: 2.0
+
+    # Alkoholgehalt in Volumenprozent
+    - field: alcohol
+      type: float
+      minimum: 8.0
+      maximum: 15.0
+
+    # Qualitaetsbewertung (Schulnote von Verkostern), zulaessig sind 3 bis 9
+    - field: quality
+      type: integer
+      minimum: 3
+      maximum: 9
+      allowed_values: [3, 4, 5, 6, 7, 8, 9]
+
+  # --- Feldübergreifende Regeln ------------------------------------------------
+  crossFieldRules:
+    # Gesamt-SO2 muss immer >= freiem SO2 sein, weil das freie SO2 chemisch
+    # ein Teil des Gesamt-SO2 ist. Ein kleinerer Gesamtwert waere unmoeglich.
+    - rule: total_so2_gte_free_so2
+      description: total_sulfur_dioxide muss groesser oder gleich free_sulfur_dioxide sein,
+                   da freies SO2 chemisch immer ein Teilbestand des Gesamt-SO2 ist
