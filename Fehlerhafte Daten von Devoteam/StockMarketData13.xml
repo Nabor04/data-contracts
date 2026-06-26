@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-04-22T21:11:24.746Z">
+    <stock seq="1949">
+        <stockData>
+            <symbol>HOOJ</symbol>
+            <sector>mediaentertainment</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">1290.28</bidPrice>
+                <askPrice currency="EUR">0</askPrice>
+                <lastSalePrice currency="EUR">1320.28 </lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>14</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>76</lastSaleSize>
+            </sizeInfo>
+            <volume>90887</volume>
+            <marketPercent>0.0442</marketPercent>
+        </stockData>
+    </stock>
+</transaction>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction time="2026-04-22T09:31:27.745Z">
+    <stock seq="7480">
+        <stockData>
+            <symbol>BMZM</symbol>
+            <sector>retailing</sector>
+            <securityType>commonstock</securityType>
+            <priceInfo>
+                <bidPrice currency="EUR">2296.84</bidPrice>
+                <askPrice currency="EUR">0</askPrice>
+                <lastSalePrice currency="EUR">2246.84 </lastSalePrice>
+            </priceInfo>
+            <sizeInfo>
+                <bidSize>33</bidSize>
+                <askSize>0</askSize>
+                <lastSaleSize>0</lastSaleSize>
+            </sizeInfo>
+            <volume>193565</volume>
+            <marketPercent>0.01773</marketPercent>
+        </stockData>
+    </stock>
+</transaction>
